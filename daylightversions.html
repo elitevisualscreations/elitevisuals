@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Download previous versions of Daylight Shader by EliteVisuals Studio">
+<title>Versions | Daylight Shader</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:#09080d;
+color:white;
+overflow-x:hidden;
+}
+
+body::before{
+content:'';
+position:fixed;
+inset:0;
+background:
+radial-gradient(circle at top right, rgba(124,77,255,0.14), transparent 35%),
+radial-gradient(circle at bottom left, rgba(179,136,255,0.08), transparent 35%);
+pointer-events:none;
+z-index:-1;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:85px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0 6vw;
+background:rgba(7,7,12,0.82);
+backdrop-filter:blur(14px);
+border-bottom:1px solid rgba(255,255,255,0.06);
+z-index:1000;
+}
+
+.logo{
+font-family:'Orbitron',sans-serif;
+font-size:24px;
+letter-spacing:3px;
+font-weight:700;
+background:linear-gradient(90deg,#ffffff,#b388ff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+nav{
+display:flex;
+gap:26px;
+flex-wrap:wrap;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+font-weight:600;
+transition:0.3s ease;
+}
+
+nav a:hover{
+color:#b388ff;
+transform:translateY(-4px);
+}
+
+.hero{
+min-height:60vh;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:140px 6vw 80px;
+text-align:center;
+background:
+linear-gradient(rgba(9,8,13,0.86),rgba(9,8,13,0.92)),
+radial-gradient(circle at top,#5b32a5 0%,transparent 55%);
+}
+
+.hero-content{
+max-width:850px;
+}
+
+.hero h1{
+font-size:60px;
+font-family:'Orbitron',sans-serif;
+margin-bottom:18px;
+}
+
+.hero p{
+font-size:18px;
+font-weight:600;
+color:#d2d2d2;
+line-height:1.8;
+}
+
+main{
+padding:0 6vw 100px;
+}
+
+.section-title{
+text-align:center;
+font-size:42px;
+font-family:'Orbitron',sans-serif;
+margin-bottom:50px;
+}
+
+.download-grid{
+max-width:1200px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:24px;
+}
+
+.version-card{
+display:flex;
+justify-content:space-between;
+align-items:flex-start;
+gap:40px;
+background:rgba(255,255,255,0.04);
+border:1px solid rgba(255,255,255,0.08);
+border-radius:26px;
+padding:34px;
+transition:0.35s ease;
+box-shadow:0 10px 30px rgba(0,0,0,0.25);
+}
+
+.version-card:hover{
+transform:translateY(-6px);
+border-color:rgba(179,136,255,0.28);
+}
+
+.version-top{
+display:flex;
+flex-direction:column;
+align-items:flex-start;
+}
+
+.release-date{
+color: #e0e0e0;;
+margin-bottom:10px;
+font-size:14px;
+font-weight:600;
+}
+
+.version-tag{
+display:inline-block;
+padding:6px 14px;
+background:#221133;
+color:#d7c4ff;
+border-radius:999px;
+font-size:13px;
+font-weight:700;
+}
+
+.download-btn{
+display:inline-block;
+text-decoration:none;
+background:#b388ff;
+color:#09080d;
+padding:14px 24px;
+border-radius:16px;
+font-weight:700;
+transition:0.3s ease;
+}
+
+.download-btn:hover{
+transform:translateY(-3px);
+}
+
+.warning-box{
+max-width:1000px;
+margin:70px auto 0;
+padding:28px;
+border-radius:22px;
+background:rgba(255,255,255,0.04);
+border:1px solid rgba(255,255,255,0.06);
+line-height:1.8;
+color:#cfcfcf;
+}
+
+footer{
+padding:70px 6vw;
+background:rgba(255,255,255,0.02);
+border-top:1px solid rgba(255,255,255,0.06);
+}
+
+footer h2{
+font-family:'Orbitron',sans-serif;
+margin-bottom:14px;
+}
+
+footer p{
+color:#b7b7b7;
+line-height:1.7;
+max-width:700px;
+}
+
+.footer-links{
+margin-top:24px;
+display: flex;
+gap:22px;
+}
+
+.footer-links a{
+text-decoration:none;
+color:#d4d4d4;
+font-weight:600;
+transition:0.3s ease;
+}
+
+.footer-links a:hover{
+color:#b388ff;
+transform: translateY(-4px);
+}
+
+.copyright{
+margin-top:28px;
+opacity:0.7;
+font-size:15px;
+font-weight: 600;
+}
+
+@media(max-width:768px){
+
+.version-card{
+flex-direction:column;
+gap:24px;
+}
+
+header{
+height:auto;
+padding:18px 6vw;
+flex-direction:column;
+gap:14px;
+}
+
+.hero{
+padding-top:180px;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+.section-title{
+font-size:30px;
+}
+
+.version-card{
+padding:28px;
+}
+
+.version-card h2{
+font-size:24px;
+}
+
+.download-btn{
+display:block;
+text-align:center;
+width:100%;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">ELITEVISUALS</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="index.html#about">About</a>
+<a href="index.html#features">Features</a>
+<a href="index.html#showcase">Showcase</a>
+<a href="#downloads">Downloads</a>
+</nav>
+
+</header>
+
+<section class="hero">
+<div class="hero-content">
+<h1>PREVIOUS VERSIONS</h1>
+<p>
+Download older releases of Daylight Shader for Minecraft Bedrock Edition.
+Perfect for compatibility testing, older worlds, or previous visual styles.
+</p>
+</div>
+</section>
+
+<main>
+
+<section id="downloads">
+
+<h2 class="section-title">Available Downloads</h2>
+
+<div class="download-grid">
+
+<div class="version-card">
+<div>
+<div class="version-top">
+<div class="release-date">Released — May 2026</div>
+<div class="version-tag">Version 1.0</div>
+</div>
+</div>
+
+<div>
+<a href="daylight_versions/Daylight.mcpack" class="download-btn">Download v1.0</a>
+
+</div>
+</div>
+
+<div class="warning-box">
+<strong>Important:</strong> Older versions may contain bugs, missing features, or reduced compatibility with newer Minecraft Bedrock versions. For the best experience, use the latest stable release whenever possible.
+</div>
+
+</section>
+
+</main>
+
+<footer id="footer">
+<h2>EliteVisuals</h2>
+
+<p>
+Creating cinematic Minecraft Bedrock shader experiences with atmospheric realism,
+premium environmental visuals, and immersive RenderDragon presentation.
+</p>
+
+<div class="footer-links">
+
+<a href="index.html">Home</a>
+<a href="index.html#about">About</a>
+<a href="index.html#features">Features</a>
+<a href="index.html#showcase">Showcase</a>
+<a href="#downloads">Downloads</a>|
+<a href="https://www.youtube.com/@elitevisualscreations" target="_blank">YouTube</a>
+
+</div>
+
+<div class="copyright">
+© 2026 EliteVisuals
+</div>
+</footer>
+
+</body>
+</html>
