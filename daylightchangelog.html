@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Download previous versions of Daylight Shader by EliteVisuals Studio">
-<title>Versions | Daylight Shader</title>
+<meta name="description" content="Official changelog for Daylight Shader by EliteVisuals Studio">
+<title> Changelog | Daylight Shader</title>
 
 <link rel="icon" type="image/png" href="other_images/favicon.png">
  
@@ -85,119 +85,75 @@ color:#b388ff;
 transform:translateY(-4px);
 }
 
-.hero{
-min-height:60vh;
-display:flex;
-align-items:center;
-justify-content:center;
-padding:140px 6vw 80px;
-text-align:center;
-background:
-linear-gradient(rgba(9,8,13,0.86),rgba(9,8,13,0.92)),
-radial-gradient(circle at top,#5b32a5 0%,transparent 55%);
-}
-
-.hero-content{
-max-width:850px;
-}
-
-.hero h1{
-font-size:60px;
-font-family:'Orbitron',sans-serif;
-margin-bottom:18px;
-}
-
-.hero p{
-font-size:18px;
-font-weight:600;
-color:#d2d2d2;
-line-height:1.8;
-}
-
 main{
-padding:0 6vw 100px;
+padding:140px 6vw 80px;
 }
 
 .section-title{
-text-align:center;
 font-size:42px;
+margin-bottom:40px;
 font-family:'Orbitron',sans-serif;
-margin-bottom:50px;
+text-align:center;
 }
 
-.download-grid{
-max-width:1200px;
+.container{
+max-width:700px;
 margin:auto;
-display:flex;
-flex-direction:column;
-gap:24px;
 }
 
-.version-card{
-display:flex;
-justify-content:space-between;
-align-items:flex-start;
-gap:40px;
+.version-box{
 background:rgba(255,255,255,0.04);
 border:1px solid rgba(255,255,255,0.08);
-border-radius:26px;
-padding:34px;
-transition:0.35s ease;
+border-radius:24px;
+padding:36px;
+margin-bottom:30px;
+transition:0.3s ease;
 box-shadow:0 10px 30px rgba(0,0,0,0.25);
 }
 
-.version-card:hover{
-transform:translateY(-6px);
-border-color:rgba(179,136,255,0.28);
+.version-box:hover{
+transform:translateY(-5px);
+border-color:rgba(179,136,255,0.25);
 }
 
-.version-top{
+.version-header{
 display:flex;
-flex-direction:column;
-align-items:flex-start;
+justify-content:space-between;
+align-items:center;
+gap:15px;
+flex-wrap:wrap;
+margin-bottom:18px;
 }
 
-.release-date{
-color: #e0e0e0;;
-margin-bottom:10px;
+.version-box h2{
+color:#e1c7ff;
+font-size:30px;
+}
+
+.version-date{
+color:#ffffff;
 font-size:14px;
 font-weight:600;
 }
 
-.version-tag{
+ul{
+padding-left:20px;
+}
+
+li{
+margin-bottom:15px;
+color:#d7d7d7;
+}
+
+.tag{
 display:inline-block;
 padding:6px 14px;
+border-radius:999px;
 background:#221133;
 color:#d7c4ff;
-border-radius:999px;
 font-size:13px;
-font-weight:700;
-}
-
-.download-btn{
-display:inline-block;
-text-decoration:none;
-background:#b388ff;
-color:#09080d;
-padding:14px 24px;
-border-radius:16px;
-font-weight:700;
-transition:0.3s ease;
-}
-
-.download-btn:hover{
-transform:translateY(-3px);
-}
-
-.warning-box{
-max-width:1000px;
-margin:70px auto 0;
-padding:28px;
-border-radius:22px;
-background:rgba(255,255,255,0.04);
-border:1px solid rgba(255,255,255,0.06);
-line-height:1.8;
-color:#cfcfcf;
+margin-bottom:16px;
+font-weight:600;
 }
 
 footer{
@@ -244,11 +200,6 @@ font-weight: 600;
 
 @media(max-width:768px){
 
-.version-card{
-flex-direction:column;
-gap:24px;
-}
-
 header{
 height:85px;
 padding:0 20px;
@@ -256,15 +207,23 @@ flex-direction:row;
 gap:0;
 }
 
+.logo{
+font-size:20px;
+}
+
+nav{
+gap:14px;
+}
+
 .hero{
 padding-top:180px;
 }
 
 .hero h1{
-font-size:40px;
+font-size:42px;
 }
 
-.hero p{
+.subtitle{
 font-size:16px;
 }
 
@@ -272,30 +231,24 @@ font-size:16px;
 font-size:30px;
 }
 
-.version-card{
+.version-box{
 padding:28px;
 }
 
-.version-card h2{
+.version-box h2{
 font-size:24px;
 }
 
-.download-btn{
-display:block;
-text-align:center;
+.hero-buttons{
+flex-direction:column;
+align-items:center;
+}
+
+.hero-buttons a{
 width:100%;
+max-width:320px;
+text-align:center;
 }
-
-.footer-links {
-margin-top: 20px;
-font-size: 14px;
-gap: 10px;
-}
-
-.copyright{
-font-size: 13.5px;
-}
-
 }
 
 .hamburger{
@@ -315,16 +268,16 @@ border-radius:3px;
 transition:.3s;
 }
 
-.version-card{
-backdrop-filter:blur(14px);
+.version-box{
+backdrop-filter:blur(16px);
 }
 
-.version-card:hover{
-box-shadow:0 15px 40px rgba(124,77,255,.15);
+.version-box:hover{
+box-shadow:0 15px 40px rgba(124,77,255,.18);
 }
 
-.download-btn{
-box-shadow:0 0 25px rgba(179,136,255,.3);
+.tag{
+box-shadow:0 0 15px rgba(179,136,255,.15);
 }
 
 @media(max-width:900px){
@@ -370,37 +323,47 @@ nav.active{
 right:0;
 }
 
-.hero h1{font-size:42px;}
+main{
+padding:120px 20px 60px;
+}
 
-.section-title{font-size:32px;}
+.section-title{
+font-size:32px;
+}
+
+.footer-links {
+margin-top: 20px;
+font-size: 14px;
+gap: 10px;
+}
+
+.copyright{
+font-size: 13.5px;
+}
+
 }
 
 @media(max-width:600px){
-.hero{
-padding:130px 20px 60px;
-min-height:50vh;
+.section-title{
+font-size:26px;
 }
 
-.hero h1{
-font-size:32px;
-line-height:1.1;
-}
-
-.hero p{
-font-size:15px;
-}
-
-main{
-padding:0 20px 70px;
-}
-
-.version-card{
+.version-box{
 padding:22px;
+}
+
+.version-box h2{
+font-size:22px;
+}
+
+.version-header{
+flex-direction:column;
+align-items:flex-start;
 }
 
 .footer-links{
 flex-wrap:wrap;
-gap:14px;
+gap:12px;
 }
 }
 
@@ -410,6 +373,7 @@ gap:14px;
 <body>
 
 <header>
+
 <div class="logo">ELITEVISUALS</div>
 
 <div class="hamburger" id="hamburger">
@@ -421,52 +385,50 @@ gap:14px;
 <a href="index.html#about">About</a>
 <a href="index.html#features">Features</a>
 <a href="index.html#showcase">Showcase</a>
-<a href="#downloads">Downloads</a>
+<a href="daylightversions.html">Downloads</a>
 </nav>
 
 </header>
 
-<section class="hero">
-<div class="hero-content">
-<h1>PREVIOUS VERSIONS</h1>
-<p>
-Download older releases of Daylight Shader for Minecraft Bedrock Edition.
-Perfect for compatibility testing, older worlds, or previous visual styles.
-</p>
-</div>
-</section>
-
 <main>
 
-<section id="downloads">
+<section id="features">
 
-<h2 class="section-title">Available Downloads</h2>
+<h2 class="section-title">Daylight Shader Latest Changelog</h2>
 
-<div class="download-grid">
+<div class="container">
 
-<div class="version-card">
-<div>
-<div class="version-top">
-<div class="release-date">Released — May 2026</div>
-<div class="version-tag">Version 1.0</div>
-</div>
-</div>
+<div class="version-box">
 
-<div>
-<a href="daylight_versions/Daylight.mcpack" class="download-btn">Download v1.0</a>
+<div class="tag">Version 1.0</div>
 
-</div>
+<div class="version-header">
+<h2>Initial Release</h2>
+<div class="version-date">- May 2026</div>
 </div>
 
-<div class="warning-box">
-<strong>Important:</strong> Older versions may contain bugs, missing features, or reduced compatibility with newer Minecraft Bedrock versions. For the best experience, use the latest stable release whenever possible.
+<ul>
+<li>Added cinematic biome fog system</li>
+<li>Implemented realistic atmospheric distance haze</li>
+<li>Custom End dimension fog and ambience</li>
+<li>Added natural grass and foliage colormaps</li>
+<li>Added waving leaves and plants</li>
+<li>Added OFF / Breeze / Storm wind modes</li>
+<li>Optimized visuals for Minecraft Bedrock RenderDragon</li>
+<li>Improved mountain cinematic fog depth</li>
+<li>Balanced realistic environmental color grading</li>
+<li>Enhanced survival gameplay atmosphere</li>
+</ul>
+
+</div>
+
 </div>
 
 </section>
 
 </main>
 
-<footer id="footer">
+<footer id="footer" >
 <h2>EliteVisuals</h2>
 
 <p>
@@ -480,7 +442,7 @@ premium environmental visuals, and immersive RenderDragon presentation.
 <a href="index.html#about">About</a>
 <a href="index.html#features">Features</a>
 <a href="index.html#showcase">Showcase</a>
-<a href="#downloads">Downloads</a>|
+<a href="daylightversions.html">Downloads</a>|
 <a href="https://www.youtube.com/@elitevisualscreations" target="_blank">YouTube</a>
 
 </div>
@@ -489,6 +451,7 @@ premium environmental visuals, and immersive RenderDragon presentation.
 © 2026 EliteVisuals
 </div>
 </footer>
+
 
 <script>
 const hamburger=document.getElementById('hamburger');
@@ -505,4 +468,5 @@ document.querySelectorAll('#navMenu a').forEach(link=>{
 });
 </script>
 </body>
+
 </html>
